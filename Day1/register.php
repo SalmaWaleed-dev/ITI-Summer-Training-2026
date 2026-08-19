@@ -15,28 +15,46 @@
     <div class="card shadow-sm p-4" style="width: 100%; max-width: 460px;">
       <h3 class="text-center mb-4">Create Account</h3>
 
-      <form method="POST" action="">
+      <form method="POST" action="../Day2/server.php">
         <div class="mb-3">
           <label class="form-label">Full Name</label>
-          <input type="text" name="name" class="form-control" placeholder="FullName" required>
+          <input type="text"
+                 name="name" 
+                 class="form-control" 
+                 placeholder="FullName"
+                  required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Email</label>
-          <input type="email" name="email" class="form-control" placeholder="Email" required>
+          <input type="email"
+                 name="email" 
+                 class="form-control" 
+                 placeholder="Email" 
+                 required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Password</label>
-          <input type="password" name="password" class="form-control" placeholder="••••••••" required>
+          <input type="password" 
+                name="password" 
+                class="form-control"
+                placeholder="••••••••"
+                 required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Confirm Password</label>
-          <input type="password" name="confirm_password" class="form-control" placeholder="••••••••" required>
+          <input type="password" 
+                 name="confirm_password" 
+                 class="form-control" 
+                 placeholder="••••••••" 
+                 required>
         </div>
 
-        <button type="submit" class="btn btn-dark w-100">Register</button>
+        <button type="submit" 
+                name="btn-register" 
+                class="btn btn-dark w-100">Register</button>
 
         <p class="text-center mt-3 mb-0">
           Already have an account? <a href="index.php">Login</a>
