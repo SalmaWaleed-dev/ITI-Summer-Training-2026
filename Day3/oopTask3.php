@@ -127,4 +127,34 @@ $book = new Book(
 
 echo $book->toString();
 
+
+// graph 3
+
+class Cylinder extends Circle {
+    private $height = 1.0;
+
+    
+    public function __construct($radius = 1.0, $height = 1.0, $color = "red") {
+        parent::__construct($radius, $color);
+        $this->height = $height;
+    }
+
+    public function getHeight() {
+        return $this->height;
+    }
+
+    public function setHeight($height) {
+        $this->height = $height;
+    }
+
+    
+    public function getVolume() {
+        return $this->getArea() * $this->height;
+    }
+
+    public function toString() {
+        return "Cylinder[subclass of " . parent::toString() . ", height=" . $this->height . "]";
+    }
+}
+
 ?>
